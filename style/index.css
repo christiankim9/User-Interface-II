@@ -61,7 +61,8 @@ header {
 header a {
     text-decoration: none;
     color: black;
-    padding: 0.5rem 0.5rem;
+    width: 20rem;
+    padding: 0.5rem 1.5rem;
     background-color: #eea29a;
     border-radius: 1rem;
 }
@@ -84,10 +85,10 @@ nav {
     justify-content: space-evenly;
 }
 .top img{
-width: 45%;
-box-sizing: border-box;
-margin: 1%;
-border-radius: 5%;
+    width: 45%;
+    box-sizing: border-box;
+    margin: 1%;
+    border-radius: 5%;
 }
 
 .top-description {
@@ -109,8 +110,8 @@ border-radius: 5%;
 
 h2 {
     font-size: 2rem;
-    
 }
+
 
 /* Thumbnail Section Styles*/
 .thumbnails{
@@ -150,4 +151,39 @@ footer a {
     border-radius: 1rem;
     width: 15%;
     text-align: center;
+}
+
+@media (max-width: 800px) {
+    .top {
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        text-align: center;
+        
+    }
+    .top img {
+        width: 100%;
+        margin: auto;
+    }
+    .top-description {
+        width: 100%;
+    }
+
+    header {
+        text-align: center;
+    }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        width: 90%;
+        margin: 1rem;
+    }
+
+    .images{
+        width: 45%;
+    }
 }
